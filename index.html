@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Seymour+One&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="icon" type="image/x-icon" href="./src/images/rock-ai (1).webp">
+  </head>
+  <body>
+    <section class="main">
+      <div class="main__up">
+        <div class="main__left">
+          <p id="score_ai" class="score">0</p>
+          <p class="who">AI</p>
+        </div>
+        <div class="main__right">
+          <p id="score_human" class="score">0</p>
+          <p class="who">you</p>
+        </div>
+      </div>
+      <div class="left">
+        <img
+          class="hand left__hand"
+          src="./src/images/AI Arm.webp"
+          alt="arm-ai"
+        />
+        <!-- <img
+            class="left__wrist"
+            src="./src/images/rock-ai.webp"
+            alt="rock-ai"
+          /> -->
+      </div>
+      <div class="right">
+        <img
+          class="right__hand"
+          src="./src/images/Human Arm.webp"
+          alt="arm-human"
+        />
+        <!-- <img
+            class="left__wrist"
+            src="./src/images/rock-human.webp"
+            alt="rock-human"
+          /> -->
+      </div>
+      <div class="btns">
+        <button id="rock" class="btn btn_rock">
+          <img
+            class="rock"
+            src="./src/images/buttonRock.webp"
+            alt="rock-human"
+          />
+        </button>
+        <button id="paper" class="btn btn_paper">
+          <img
+            class="paper"
+            src="./src/images/buttonPaper.webp"
+            alt="paper-human"
+          />
+        </button>
+        <button id="scissors" class="btn btn_scissors">
+          <img
+            class="scissors"
+            src="./src/images/buttonScissors.webp"
+            alt="scissors-human"
+          />
+        </button>
+      </div>
+      <div class="result"><p class="draw d-none">"IT'S  A  DRAW"</p> 
+        </div>
+      <div class="btns__result">
+      <button class="btn__result d-none next"><img src="./src/images/buttonNextRound.webp"/></button>
+      <button class="btn__result d-none restart"><img src="./src/images/buttonRestart.webp"/></button>
+    </div>
+    
+    </section>
+    <div class="modal">
+      <p class="text__modul">Return your gadget</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
