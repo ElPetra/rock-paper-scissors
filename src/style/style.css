@@ -7,7 +7,7 @@
 :root {
   --index: calc(1vw + 1vh);
 }
-.d-none{
+.d-none {
   display: none;
 }
 
@@ -145,12 +145,54 @@ box-shadow: 4px -7px 0px 0px #C2C2C2 inset; */
   border: none;
   background-color: #9dcaff;
 }
+.img__result {
+  height: calc(var(--index) * 3);
+}
+.btn__result:hover {
+  cursor: pointer;
+}
 
 /* .shadow {
 box-shadow: 4px 4px 0px 0px #000000; //попытка второму классу сделать вторую тень (черную)
 }  */
-
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
+  .left {
+    bottom: 100px;
+  }
+  .left__hand {
+    transform: rotate(40deg);
+  }
+  .right {
+    bottom: 100px;
+  }
+  .right__hand {
+    transform: rotate(315deg);
+  }
+}
+@media (max-width: 690px) {
+  .main__up {
+    padding: 0 10px;
+  }
+  .left__hand {
+    height: calc(var(--index) * 25);
+  }
+  .left {
+    bottom: 200px;
+  }
+  .right__hand {
+    height: calc(var(--index) * 25);
+  }
+  .right {
+    bottom: 200px;
+  }
+  .score {
+    font-size: calc(var(--index) * 5);
+  }
+  .who {
+    font-size: calc(var(--index) * 2);
+  }
+}
+@media (max-width: 425px) {
   .modal {
     align-items: center;
     display: flex;
@@ -163,11 +205,25 @@ box-shadow: 4px 4px 0px 0px #000000; //попытка второму класс�
     -webkit-text-stroke-width: 2;
     -webkit-text-stroke-color: #000;
     font-family: "Seymour One";
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 400;
     text-align: center;
   }
   .main {
     display: none;
+  }
+}
+
+@media (min-width: 425px) and (orientation: landscape) {
+   .left {
+    bottom: -20px;
+  }
+  .right {
+    bottom: -20px;
+  }
+  .main__up {
+    margin-top: 20px;
+    flex-grow: 1;
+    gap: 100px;
   }
 }
