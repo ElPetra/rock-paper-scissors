@@ -3,14 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --index: calc(1vw + 1vh);
 }
-.d-none {
-  display: none;
-}
-
 body {
   background-color: #9dcaff;
 }
@@ -22,6 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  padding: 0 0 30px;
 }
 .main__up {
   display: flex;
@@ -191,6 +187,9 @@ box-shadow: 4px 4px 0px 0px #000000; //попытка второму класс�
   .who {
     font-size: calc(var(--index) * 2);
   }
+}
+.d-none {
+  display: none;
 }
 @media (max-width: 425px) {
   .modal {
